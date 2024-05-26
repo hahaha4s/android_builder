@@ -13,6 +13,7 @@ jobs:
         uses: actions/setup-java@v4.2.1
         with:
           java-version: 1.8
+          distribution: 'microsoft'
       - id: get-project
         name: Get project name
         run: echo "PROJECT::$(cat project-to-build)" >> $GITHUB_OUTPUT
